@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pyweather"
+version = "0.1.0"
+description = ""
+authors = ["ravigoel08 <ravigoel.1997@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.25.1"
+pydantic = "^1.7.3"
+orjson = "^3.4.6"
+
+[tool.poetry.dev-dependencies]
+check-manifest = "^0.45"
+
+[build-system]
+requires = ["setuptools","poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
