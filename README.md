@@ -16,8 +16,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
+    <img src="assets/Samarkan.png" width="800" />
+  
   <h3 align="center">PYWEATHER</h3>
-
+  
   <p align="center">
     A python3 library providing information of Current & Forecast of Weather as well as Air Pollution based on data from OpenWeatherMap.
     <br />
