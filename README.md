@@ -16,17 +16,17 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center">PYZIPCIN</h3>
+  <h3 align="center">PYWEATHER</h3>
 
   <p align="center">
-    A python3 library providing information and validation of ZIP codes of India based on data from data.gov.in(2019)
+    A python3 library providing information of Current & Forecast of Weather as well as Air Pollution based on data from OpenWeatherMap.
     <br />
-    <a href="https://github.com/ravigoel08/pyzipcin"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ravigoel08/pyweather"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ravigoel08/pyzipcin/blob/master/assets/demo1.gif">View Demo</a>
+    <a href="https://github.com/ravigoel08/pyzipcin/blob/master/assets/">View Demo</a>
     ·
-    <a href="https://github.com/ravigoel08/pyzipcin/issues">Report Bug</a>
+    <a href="https://github.com/ravigoel08/pyweather/issues">Report Bug</a>
   </p>
 </p>
 
@@ -60,11 +60,13 @@
 ## About The Library
 
 
-A python3 library providing information of ZIP codes of India as well as Verify Pincode based on data from data.gov.in(2019)
+A python3 library providing information of Current & Forecast of Weather as well as Air Pollution based on data from OpenWeatherMap.
 
 ### Built With 
 
-* [SQLAlchemy](https://www.sqlalchemy.org/)
+* [Requests](https://www.sqlalchemy.org/)
+* [Pydantic](https://www.sqlalchemy.org/)
+* [orjson](https://www.sqlalchemy.org/)
 * [Python3](https://www.python.org/) :snake:
 
 
@@ -81,7 +83,7 @@ Python3 and Above
 
 1. Install the Library :eyes:
    ```sh
-   pip install pyzipcin
+   pip install pyweather
    ```
 
 2. And you are done :boom:
@@ -92,18 +94,11 @@ Python3 and Above
 ## Usage 
 
 ```sh
->>> from pyzipcin import *
+>>> from pyweather import airpol, curweath
 
->>> decode(110032)     # decode(pincode, all_result=False)
->>> [{'circlename': 'Delhi Circle', 'regionname': 'NA', 'divisionname': 'Delhi East Division', 'officename': 'Babarpur SO North East Delhi', 'pincode': 110032, 'officetype': 'SO', 'delivery': 'Non Delivery', 'district': 'SHAHDARA', 'statename': 'Delhi'}]
 
->>> encode('kullu')    # encode(districtname)
->>> [{'pincode': 175101, 'officename': 'Akhara Bazar SO'}]
-
->>> validate(110032)   # validate(pincode)
->>> True
 ```
-![demo](assets/demo1.gif)
+![demo](assets/)
 
 
 <!-- LICENSE -->
@@ -118,7 +113,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 CodewithRv - ravigoel.1997@gmail.com
 
-Project Link: [https://github.com/ravigoel08/pyzipcin](https://github.com/ravigoel08/pyzipcin)
+Project Link: [https://github.com/ravigoel08/pyweather](https://github.com/ravigoel08/pyweather)
 
 
 
@@ -127,13 +122,13 @@ Project Link: [https://github.com/ravigoel08/pyzipcin](https://github.com/ravigo
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 
-[contributors-url]: https://github.com/ravigoel08/pyzipcin/graphs/contributors
-[forks-url]: https://github.com/ravigoel08/pyzipcin/network/members
-[stars-url]: https://github.com/ravigoel08/pyzipcin/stargazers
-[issues-url]: https://github.com/ravigoel08/pyzipcin/issues
+[contributors-url]: https://github.com/ravigoel08/pyweather/graphs/contributors
+[forks-url]: https://github.com/ravigoel08/pyweather/network/members
+[stars-url]: https://github.com/ravigoel08/pyweather/stargazers
+[issues-url]: https://github.com/ravigoel08/pyweather/issues
 [linkedin-url]: https://www.linkedin.com/in/ravi-goyal52/
-[contributors-shield]: https://img.shields.io/github/contributors/ravigoel08/pyzipcin?style=for-the-badge
-[issues-shield]: https://img.shields.io/github/issues/ravigoel08/pyzipcin?style=for-the-badge
-[forks-shield]: https://img.shields.io/github/forks/ravigoel08/pyzipcin?style=for-the-badge
-[stars-shield]: https://img.shields.io/github/stars/ravigoel08/pyzipcin?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/ravigoel08/pyweather?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/ravigoel08/pyweather?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/ravigoel08/pyweather?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/ravigoel08/pyweather?style=for-the-badge
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
