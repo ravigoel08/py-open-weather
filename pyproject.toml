@@ -12,6 +12,8 @@ orjson = "^3.4.6"
 
 [tool.poetry.dev-dependencies]
 check-manifest = "^0.45"
+twine = "^3.3.0"
+pylint = "^2.6.0"
 
 [build-system]
 requires = ["setuptools","poetry-core>=1.0.0"]

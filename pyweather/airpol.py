@@ -37,13 +37,16 @@ def by_geoc(lat: float, lon: float, types: Optional[str] = "current") -> AirpolD
     AirpolData
     """
 
-    payload = {"lat": f"{lat}", "lon": f"{lon}", "appid": f"{API_KEY}"}
+    payload = {"lat": f"{lat}", "lon": f"{lon}", "appid": API_KEY}
     if types == "current":
         URL = f"{AIRPOL_URL}"
     elif types == "forecast":
         URL = f"{AIRPOL_URL}/{types.lower()}"
     else:
-        return
+        raise Exception("types can either be current(default) or forecast")
 
     req = requests.get(URL, params=payload)
-    return AirpolData.parse_raw(json.dumps(req.json()))
+    if req.status_code==200:
+        return AirpolData.parse_raw(json.dumps(req.json()))
+    else:
+        return req.json()

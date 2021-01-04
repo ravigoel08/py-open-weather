@@ -21,7 +21,7 @@ def by_cname(
     countrycode: Optional[str] = "",
     units: Optional[str] = "",
     lang: Optional[str] = "en",
-) -> WeatherData:
+) -> WeatherData.parse_raw:
     """
     Description
     -----------
@@ -57,12 +57,15 @@ def by_cname(
         "appid": f"{API_KEY}",
     }
     req = requests.get(WEATH_URL, params=payload)
-    return WeatherData(json.dumps(req.json()))
+    if req.status_code==200:
+        return WeatherData.parse_raw(json.dumps(req.json()))
+    else:
+        return req.json()
 
 
 def by_cid(
     cityid: int, units: Optional[str] = "", lang: Optional[str] = "en"
-) -> WeatherData:
+) -> WeatherData.parse_raw:
     """
     Description
     -----------
@@ -97,12 +100,14 @@ def by_cid(
         "appid": f"{API_KEY}",
     }
     req = requests.get(WEATH_URL, params=payload)
-    return WeatherData(json.dumps(json.dumps(req.json())))
-
+    if req.status_code==200:
+        return WeatherData.parse_raw(json.dumps(req.json()))
+    else:
+        return req.json()
 
 def by_geoc(
     lat: float, lon: float, units: Optional[str] = "", lang: Optional[str] = "en"
-) -> WeatherData:
+) -> WeatherData.parse_raw:
     """
     Description
     -----------
@@ -138,15 +143,17 @@ def by_geoc(
         "appid": f"{API_KEY}",
     }
     req = requests.get(WEATH_URL, params=payload)
-    return WeatherData(json.dumps(req.json()))
-
-
+    if req.status_code==200:
+        return WeatherData.parse_raw(json.dumps(req.json()))
+    else:
+        return req.json()
+    
 def by_zcode(
     zipcode: int,
     countrycode: str,
     units: Optional[str] = "",
     lang: Optional[str] = "en",
-) -> WeatherData:
+) -> WeatherData.parse_raw:
     """
     Description
     -----------
@@ -182,4 +189,7 @@ def by_zcode(
         "appid": f"{API_KEY}",
     }
     req = requests.get(WEATH_URL, params=payload)
-    return WeatherData(json.dumps(req.json()))
+    if req.status_code==200:
+        return WeatherData.parse_raw(json.dumps(req.json()))
+    else:
+        return req.json()

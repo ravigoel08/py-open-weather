@@ -62,16 +62,6 @@ class Wind(BaseModel):
 class Clouds(BaseModel):
     all: int = Field(None, description="Cloudiness, %")
 
-
-# class Rain(BaseModel):
-#     1h: float = Field(None, description= 'Rain volume for the last 1 hour, mm')
-#     3h: float = Field(None, description= 'Rain volume for the last 1 hour, mm')
-
-# class Snow(BaseModel):
-#     1h: float = Field(None, description= 'Snow volume for the last 1 hour, mm')
-#     3h: float = Field(None, description= 'Snow volume for the last 3 hours, mm')
-
-
 class Sys(BaseModel):
     type: int = Field(None, description="Internal parameter")
     id: int = Field(None, description="Internal parameter")
@@ -89,8 +79,6 @@ class WeatherData(BaseModel):
     visibility: int = Field(None, description="")
     wind: Wind
     clouds: Clouds
-    # rain: Rain
-    # snow: Snow
     dt: int = Field(None, description="Time of data calculation, unix, UTC")
     sys: Sys
     timezone: int = Field(None, description="Shift in seconds from UTC")
