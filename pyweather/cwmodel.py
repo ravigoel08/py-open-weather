@@ -62,6 +62,7 @@ class Wind(BaseModel):
 class Clouds(BaseModel):
     all: int = Field(None, description="Cloudiness, %")
 
+
 class Sys(BaseModel):
     type: int = Field(None, description="Internal parameter")
     id: int = Field(None, description="Internal parameter")

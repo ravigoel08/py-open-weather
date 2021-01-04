@@ -46,7 +46,7 @@ def by_geoc(lat: float, lon: float, types: Optional[str] = "current") -> AirpolD
         raise Exception("types can either be current(default) or forecast")
 
     req = requests.get(URL, params=payload)
-    if req.status_code==200:
+    if req.status_code == 200:
         return AirpolData.parse_raw(json.dumps(req.json()))
     else:
         return req.json()
