@@ -95,6 +95,15 @@ Python3 and Above
 
 <!-- USAGE EXAMPLES -->
 ## Usage 
+* get Api key from OpenWeatherMap and pass it as environment variable
+```sh
+# for Windows (PowerShell)
+>>> $Env:API_KEY='YOUR API KEY'
+
+# for Linux
+>>> export API_KEY='YOUR API KEY'
+```
+
 * (Current) Air pollution Data based on longitude and latitude 
 
 ```sh
