@@ -18,17 +18,17 @@
 <p align="center">
     <img src="assets/Samarkan.png" width="800" />
   
-  <h3 align="center">PYWEATHER</h3>
+  <h3 align="center">py-open-weather</h3>
   
   <p align="center">
     A python3 library providing information of Current & Forecast of Weather as well as Air Pollution based on data from OpenWeatherMap.
     <br />
-    <a href="https://github.com/ravigoel08/pyweather"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ravigoel08/py-open-weather"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ravigoel08/pyzipcin/blob/master/assets/">View Demo</a>
+    <a href="https://github.com/ravigoel08/py-open-weather/blob/master/assets/">View Demo</a>
     ·
-    <a href="https://github.com/ravigoel08/pyweather/issues">Report Bug</a>
+    <a href="https://github.com/ravigoel08/py-open-weather/issues">Report Bug</a>
   </p>
 </p>
 
@@ -85,7 +85,7 @@ Python3 and Above
 
 1. Install the Library :eyes:
    ```sh
-   pip install pyweather
+   pip install py-open-weather
    ```
 
 2. And you are done :boom:
@@ -96,7 +96,7 @@ Python3 and Above
 ## Usage 
 
 ```sh
->>> from pyweather import airpol, curweath
+>>> from py-open-weather import airpol, curweath
 
 
 ```
@@ -115,7 +115,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 CodewithRv - ravigoel.1997@gmail.com
 
-Project Link: [https://github.com/ravigoel08/pyweather](https://github.com/ravigoel08/pyweather)
+Project Link: [https://github.com/ravigoel08/py-open-weather](https://github.com/ravigoel08/py-open-weather)
 
 
 
@@ -124,13 +124,13 @@ Project Link: [https://github.com/ravigoel08/pyweather](https://github.com/ravig
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 
-[contributors-url]: https://github.com/ravigoel08/pyweather/graphs/contributors
-[forks-url]: https://github.com/ravigoel08/pyweather/network/members
-[stars-url]: https://github.com/ravigoel08/pyweather/stargazers
-[issues-url]: https://github.com/ravigoel08/pyweather/issues
+[contributors-url]: https://github.com/ravigoel08/py-open-weather/graphs/contributors
+[forks-url]: https://github.com/ravigoel08/py-open-weather/network/members
+[stars-url]: https://github.com/ravigoel08/py-open-weather/stargazers
+[issues-url]: https://github.com/ravigoel08/py-open-weather/issues
 [linkedin-url]: https://www.linkedin.com/in/ravi-goyal52/
-[contributors-shield]: https://img.shields.io/github/contributors/ravigoel08/pyweather?style=for-the-badge
-[issues-shield]: https://img.shields.io/github/issues/ravigoel08/pyweather?style=for-the-badge
-[forks-shield]: https://img.shields.io/github/forks/ravigoel08/pyweather?style=for-the-badge
-[stars-shield]: https://img.shields.io/github/stars/ravigoel08/pyweather?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/ravigoel08/py-open-weather?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/ravigoel08/py-open-weather?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/ravigoel08/py-open-weather?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/ravigoel08/py-open-weather?style=for-the-badge
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
