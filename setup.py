@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 with open("README.md", "r") as fh:
   long_description = fh.read()
 setup(
-  name = 'pyweather',         # How you named your package folder (MyLib)
+  name = 'py-open-weather',         # How you named your package folder (MyLib)
   packages=find_packages(),
   include_package_data=True,
   version = '0.1.0',      # Start with a small number and increase it with every change you make
@@ -12,9 +12,9 @@ setup(
   long_description_content_type = "text/markdown",
   author = 'CodewithRv',                   # Type in your name
   author_email = 'ravigoel.1997@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/ravigoel08/pyweather',   # Provide either the link to your github or to your website
+  url = 'https://github.com/ravigoel08/py-open-weather',   # Provide either the link to your github or to your website
   download_url = '',    # I explain this later on
-  keywords = ['open weather api', 'owm', 'weather','weather api', 'pyweather', 'open weather', 'air pollution'],   # Keywords that define your package best
+  keywords = ['open weather api', 'owm', 'weather','weather api', 'pyweather', 'open weather', 'air pollution', 'py-open-weather'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'requests',
           'pydantic',
