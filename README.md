@@ -110,7 +110,6 @@ Python3 and Above
 >>> from pyweather import airpol
 >>> airpol.by_geoc(50,50)
 AirpolData(coord={'lon': 50.0, 'lat': 50.0}, list=[ListItem(dt=1609837200, main=Main(aqi=1), components=Components(co=257.02, no=0.27, no2=0.68, o3=55.08, so2=0.54, pm2_5=4.8, pm10=4.86, nh3=0.1))])
->>> airpol.by_geoc(50,50,'forecast')
 ```
 ![demo2](https://github.com/ravigoel08/py-open-weather/blob/main/assets/demo2.gif)
 
@@ -125,7 +124,6 @@ AirpolData(coord={'lon': 50.0, 'lat': 50.0}, list=[ListItem(dt=1609837200, main=
 >>> from pyweather import curweath
 >>> curweath.by_cname('delhi')
 WeatherData(coord=Coord(lon=77.22, lat=28.67), weather=[WeatherItem(id=701, main='Mist', description='mist', icon='50d')], base='stations', main=Main(temp=292.15, feels_like=293.41, temp_min=292.15, temp_max=292.15, pressure=1016, humidity=93, sea_level=None, grnd_level=None), visibility=1200, wind=Wind(speed=2.1, deg=30, gust=None), clouds=Clouds(all=75), dt=1609836404, sys=Sys(type=1, id=9165, message=None, country='IN', sunrise=1609811084, sunset=1609848469), timezone=19800, id=1273294, name='Delhi', cod=200)
->>> curweath.by_cid(2172797)
 ```
 ![demo3](https://github.com/ravigoel08/py-open-weather/blob/main/assets/demo3.gif)
 
