@@ -149,7 +149,7 @@ WeatherData(coord=Coord(lon=77.29, lat=28.69), weather=[WeatherItem(id=701, main
 >>> curweath.by_geoc(50,50)
 WeatherData(coord=Coord(lon=50.0, lat=50.0), weather=[WeatherItem(id=804, main='Clouds', description='overcast clouds', icon='04d')], base='stations', main=Main(temp=262.97, feels_like=256.76, temp_min=262.97, temp_max=262.97, pressure=1042, humidity=93, sea_level=1042, grnd_level=1041), visibility=10000, wind=Wind(speed=4.4, deg=132, gust=None), clouds=Clouds(all=99), dt=1609836784, sys=Sys(type=None, id=None, message=None, country='KZ', sunrise=1609821467, sunset=1609851156), timezone=18000, id=607847, name='West Kazakhstan', cod=200)
 ```
-![demo6](https://github.com/ravigoel08/py-open-weather/blob/main/assets/demo4.gif)
+![demo6](https://github.com/ravigoel08/py-open-weather/blob/main/assets/demo5.gif)
 
 
 
