@@ -87,6 +87,7 @@ Python3 and Above
    ```sh
    pip install py-open-weather
    ```
+![demo1](assets/demo1.gif)
 
 2. And you are done :boom:
 
@@ -94,13 +95,49 @@ Python3 and Above
 
 <!-- USAGE EXAMPLES -->
 ## Usage 
+* (Current) Air pollution Data based on longitude and latitude 
 
 ```sh
->>> from py-open-weather import airpol, curweath
-
-
+>>> from pyweather import airpol
+>>> airpol.by_geoc(50,50)
 ```
-![demo](assets/)
+![demo2](assets/demo2.gif)
+
+* (Forecast) Air pollution Data based on longitude and latitude 
+```sh
+>>> from pyweather import airpol
+>>> airpol.by_geoc(50,50,'forecast')
+```
+
+* Current Weather Data based on cityname
+```sh
+>>> from pyweather import curweath
+>>> curweath.by_cname('delhi')
+```
+![demo3](assets/demo3.gif)
+
+* Current Weather Data based on city id
+```sh
+>>> from pyweather import curweath
+>>> curweath.by_cid(2172797)
+```
+![demo4](assets/demo4.gif)
+
+* Current Weather Data based on zipcode and country code
+```sh
+>>> from pyweather import curweath
+>>> curweath.by_zcode(110032, 'in')
+```
+![demo5](assets/demo5.gif)
+
+* Current Weather Data based on Longitude and Latitude
+```sh
+>>> from pyweather import curweath
+>>> curweath.by_geoc(50,50)
+```
+![demo6](assets/demo6.gif)
+
+
 
 
 <!-- LICENSE -->
