@@ -133,7 +133,7 @@ WeatherData(coord=Coord(lon=77.22, lat=28.67), weather=[WeatherItem(id=701, main
 >>> curweath.by_cid(2172797)
 WeatherData(coord=Coord(lon=145.77, lat=-16.92), weather=[WeatherItem(id=521, main='Rain', description='shower rain', icon='09d'), WeatherItem(id=211, main='Thunderstorm', description='thunderstorm', icon='11d')], base='stations', main=Main(temp=299.2, feels_like=305.28, temp_min=299.15, temp_max=299.26, pressure=1003, humidity=94, sea_level=None, grnd_level=None), visibility=6000, wind=Wind(speed=0.5, deg=270, gust=None), clouds=Clouds(all=75), dt=1609836846, sys=Sys(type=1, id=9490, message=None, country='AU', sunrise=1609789743, sunset=1609836896), timezone=36000, id=2172797, name='Cairns', cod=200)
 ```
-![demo4](https://github.com/ravigoel08/py-open-weather/blob/main/assets/demo4.gif)
+![demo4](https://github.com/ravigoel08/py-open-weather/blob/main/assets/demo6.gif)
 
 * Current Weather Data based on zipcode and country code
 ```sh
@@ -141,7 +141,7 @@ WeatherData(coord=Coord(lon=145.77, lat=-16.92), weather=[WeatherItem(id=521, ma
 >>> curweath.by_zcode(110032, 'in')
 WeatherData(coord=Coord(lon=77.29, lat=28.69), weather=[WeatherItem(id=701, main='Mist', description='mist', icon='50d')], base='stations', main=Main(temp=292.15, feels_like=293.41, temp_min=292.15, temp_max=292.15, pressure=1016, humidity=93, sea_level=None, grnd_level=None), visibility=1200, wind=Wind(speed=2.1, deg=30, gust=None), clouds=Clouds(all=75), dt=1609836721, sys=Sys(type=1, id=9165, message=None, country='IN', sunrise=1609811070, sunset=1609848450), timezone=19800, id=0, name='Babarpur (North East Delhi)', cod=200)
 ```
-![demo5](https://github.com/ravigoel08/py-open-weather/blob/main/assets/demo5.gif)
+![demo5](https://github.com/ravigoel08/py-open-weather/blob/main/assets/demo4.gif)
 
 * Current Weather Data based on Longitude and Latitude
 ```sh
@@ -149,7 +149,7 @@ WeatherData(coord=Coord(lon=77.29, lat=28.69), weather=[WeatherItem(id=701, main
 >>> curweath.by_geoc(50,50)
 WeatherData(coord=Coord(lon=50.0, lat=50.0), weather=[WeatherItem(id=804, main='Clouds', description='overcast clouds', icon='04d')], base='stations', main=Main(temp=262.97, feels_like=256.76, temp_min=262.97, temp_max=262.97, pressure=1042, humidity=93, sea_level=1042, grnd_level=1041), visibility=10000, wind=Wind(speed=4.4, deg=132, gust=None), clouds=Clouds(all=99), dt=1609836784, sys=Sys(type=None, id=None, message=None, country='KZ', sunrise=1609821467, sunset=1609851156), timezone=18000, id=607847, name='West Kazakhstan', cod=200)
 ```
-![demo6](https://github.com/ravigoel08/py-open-weather/blob/main/assets/demo6.gif)
+![demo6](https://github.com/ravigoel08/py-open-weather/blob/main/assets/demo4.gif)
 
 
 
