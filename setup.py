@@ -5,7 +5,7 @@ setup(
   name = 'py-open-weather',         # How you named your package folder (MyLib)
   packages=find_packages(),
   include_package_data=True,
-  version = '0.1.2',      # Start with a small number and increase it with every change you make
+  version = '0.1.3',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'A python3 library providing information of Current & Forecast of Weather as well as Air Pollution based on data from OpenWeatherMap.',
   long_description = long_description,   # Give a long description about your library
