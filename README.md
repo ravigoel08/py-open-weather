@@ -66,9 +66,9 @@ A python3 library providing information of Current & Forecast of Weather as well
 
 ### Built With 
 
-* [Requests](https://www.sqlalchemy.org/)
-* [Pydantic](https://www.sqlalchemy.org/)
-* [orjson](https://www.sqlalchemy.org/)
+* [Requests](https://requests.readthedocs.io/en/master/)
+* [Pydantic](https://pydantic-docs.helpmanual.io/)
+* [orjson](https://pypi.org/project/orjson/)
 * [Python3](https://www.python.org/) :snake:
 
 
